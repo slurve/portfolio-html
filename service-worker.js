@@ -1,13 +1,11 @@
 // Set a name for the current cache
-var cacheName = 'v0002'; 
+var cacheName = 'v0005'; 
 
 // Default files to always cache
 var cacheFiles = [
-    './',
-    './index.html',
-    './assets/app.js',
-    './assets/app.css',
-    'https://fonts.googleapis.com/css?family=PT+Sans:400,700'
+    'index.html',
+    'assets/app.css',
+    'https://fonts.googleapis.com/css?family=Assistant:300,400,700'
 ]
 
 
