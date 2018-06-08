@@ -108,7 +108,7 @@
  .nav {
      z-index: 3;
      padding: 0 1rem 1rem;
-     margin: 1rem 1rem 2rem;
+     margin: 1rem 0.2rem 2rem;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -118,14 +118,15 @@
  @media (min-width: 960px) {
      .nav {
          justify-content: center;
-         margin-bottom: 3rem;
+         margin: 1rem 1rem 3rem;
     }
 }
 
  .nav a {
      margin: 0 0.5rem;
-     padding: 0.5rem 0.5rem 0;
+     padding: 0.5rem 0.2rem 0;
      font-size: 0.8rem;
+     line-height: 1.2rem;
      font-weight: 700;
      color: #646464;
 }
