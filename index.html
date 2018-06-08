@@ -135,9 +135,12 @@
                 </section>
 
                 <section class="panel about" id="about">
+
                     <h2>About</h2>
-                    <p>Hey, I’m Tom Rose. I established Slurve back in 2006 after a decade working with some really smart folks at MLB.com, Yankees.com, and NJ.com. Overall, I’ve been building websites since the late 1990s. Back then, the internet was young, the &lt;blink&gt; tag was cool and I rocked a full head of hair. Things are different now, but my passion for web standards and clean code is the same. When I’m not working on the web, I enjoy traveling, baking bread and exploring the incredible city of Philadelphia. Oh, and Slurve? It’s a baseball term — a combination of a slider and a curveball.</p>
-                    <p>I’d love to work with you. Get in touch! 👋🏼</p>
+
+                    <p>Hey, I’m Tom Rose. 👋🏼 I established Slurve (it's a baseball term -- a slider and curveball) back in 2006 after a decade working with some really smart folks at MLB.com, Yankees.com, and Advance Digital. As a one-person shop, my focus has been building content-rich, user-friendly websites for all screen sizes and devices. More often than not, I'll use WordPress as a content management system, building custom, responsive themes using the latest coding methods.</p>
+                    <p>For most projects, I'll handle all aspects of the work myself, from the initial design mockups to the website launch. Other times, clients who already have a design in place will hire me to convert it to a custom WordPress theme. I've worked with a lot of great people over the years, from large companies to small businesses and nonprofits. I’d love to work with you. Get in touch!</p>
+
                 </section>
 
                 <section class="panel contact" id="contact">
@@ -196,9 +199,65 @@
         ga('send', 'pageview');
         </script>
 
-        <script type="text/javascript" src="assets/app.js"></script>
-        
         <script>
+
+            /* some quick form validation */
+            document.querySelector('.button--submit').addEventListener('click',function(e){
+                var formName = document.querySelector('input[name=name]');
+                var formEmail = document.querySelector('input[name=email]');
+                var formPhone = document.querySelector('input[name=phone]');
+                var formDesc = document.querySelector('textarea[name=description]');
+                var errorMsg = document.querySelector('#error-message');
+                var errors = 0;
+
+                if ( formName.value == '' ) {
+                    formName.className = 'error-field';
+                    errorMsg.className = 'active';
+                    errors++;
+                }
+
+                if ( formEmail.value == '' ) {
+                    formEmail.className = 'error-field';
+                    errorMsg.className = 'active';
+                    errors++;
+                }
+
+                if ( formPhone.value == '' ) {
+                    formPhone.className = 'error-field';
+                    errorMsg.className = 'active';
+                    errors++;
+                }
+
+                if ( formDesc.value == '' ) {
+                    formDesc.className = 'error-field';
+                    errorMsg.className = 'active';
+                    errors++;
+                }
+                
+                formName.addEventListener('focus',function(e){
+                    e.target.className = '';
+                });
+
+                formEmail.addEventListener('focus',function(e){
+                    e.target.className = '';
+                });
+
+                formPhone.addEventListener('focus',function(e){
+                    e.target.className = '';
+                });
+
+                formDesc.addEventListener('focus',function(e){
+                    e.target.className = '';
+                });
+                
+                if ( errors > 0 ) {
+                    e.preventDefault();
+                    return false;
+                }
+
+            });
+
+            /* service worker */
             if (navigator.serviceWorker) {
                 navigator.serviceWorker.register('service-worker.js', {
                     scope: '/'
@@ -209,6 +268,7 @@
                     }
                 });
             }
+
         </script>
 
     </body>
