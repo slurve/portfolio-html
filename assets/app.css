@@ -193,24 +193,25 @@
      @supports (display: grid) {
          .projects__wrap {
              grid-gap: 2rem;
-             height: 1200px;
+             height: 1280px;
         }
     }
 }
 
  .projects__wrap a {
-     position: relative;
-     display: flex;
-     background-repeat: no-repeat;
-     background-position: left top;
-     background-size: cover;
-     justify-content: flex-end;
-     align-items: flex-end;
-     background-color: gray;
-     border-radius: 2px;
-     height: 220px;
-     flex: 0 1 30.333%;
-     margin: 0 1% 25px;
+    position: relative;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: gray;
+    border-radius: 2px;
+    height: 220px;
+    flex: 0 1 30.333%;
+    margin: 0 1% 25px;
+    box-shadow: 2px 2px 16px #f2f2f2;
 }
  @supports (display: grid) {
      .projects__wrap a {
@@ -225,15 +226,14 @@
 }
 
  .projects__wrap a:before {
-     background: rgba(0, 0, 0, 0.4);
-     box-shadow: 5px 5px 6px #ccc;
-     content: '';
-     width: 100%;
-     border-radius: 2px;
-     height: 100%;
-     position: absolute;
-     top: 0;
-     left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    content: '';
+    width: 100%;
+    border-radius: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
  .projects__wrap a:hover:before {
@@ -241,8 +241,8 @@
 }
 
  .projects__wrap a:hover h2 {
-     background-color: #000;
-     border-color: #000;
+     border-color: #222;
+     color: #000;
 }
 
  @media (min-width: 768px) {
@@ -298,18 +298,28 @@
      background-image: url(cityschool.jpg);
 }
 
- .projects__wrap a h2 {
-     position: relative;
-     z-index: 2;
-     margin: 10px;
-     padding: 0 12px;
-     color: #fff;
-     border: 1px solid;
-     border-radius: 1px;
-     font-size: 0.8rem;
-     font-weight: 700;
-     text-transform: uppercase;
-     letter-spacing: 2px;
+ .projects__wrap h2 {
+    background-color: #fff;
+    border-top: 1px solid #000;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 18px;
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 0;
+}
+
+ .projects__wrap h2 p {
+    margin: 2px 0 0;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #999;
+    text-transform: none;
 }
 
  .projects__clients {
@@ -372,10 +382,14 @@
 }
 
  .about {
-     text-align: left;
-     margin-top: 3rem;
-     padding: 1rem 2rem;
-     background-color: #f9f9f9;
+    text-align: left;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    background-color: #f3f3f3;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23f4f4f4' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23f5f5f5' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23f7f7f7' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23f8f8f8' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23f9f9f9' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
  @media (min-width: 960px) {
