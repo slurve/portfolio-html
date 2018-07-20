@@ -1,5 +1,5 @@
 // Set a name for the current cache
-var cacheName = 'v0005'; 
+var cacheName = 'v0006';
 
 // Default files to always cache
 var cacheFiles = [
@@ -90,7 +90,7 @@ self.addEventListener('fetch', function(e) {
 
                             // Return the response
                             return response;
-            
+
                         }); // end caches.open
 
                     })
