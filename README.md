@@ -1,2 +1,2 @@
-* Push to `master` branch on Github.
+* Push to `master` on Github
 * Run `netlify deploy`
