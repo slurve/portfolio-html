@@ -211,7 +211,7 @@
     height: 280px;
     flex: 0 1 30.333%;
     margin: 0 1% 25px;
-    box-shadow: 2px 2px 16px #f2f2f2;
+    box-shadow: 2px 2px 16px #ddd;
 }
  @supports (display: grid) {
      .projects__wrap a {
@@ -238,11 +238,6 @@
 
  .projects__wrap a:hover:before {
      background: transparent;
-}
-
- .projects__wrap a:hover h2 {
-     border-color: #222;
-     color: #000;
 }
 
  @media (min-width: 768px) {
@@ -300,7 +295,7 @@
 
  .projects__wrap h2 {
     background-color: #fff;
-    border-top: 1px solid #000;
+    border-top: 1px solid #ccc;
     width: 100%;
     position: relative;
     z-index: 2;
@@ -312,6 +307,10 @@
     font-weight: 700;
     text-align: left;
     letter-spacing: 0;
+}
+
+ .projects__wrap a:hover h2 {
+     color: #000;
 }
 
  .projects__wrap h2 p {
