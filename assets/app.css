@@ -37,11 +37,18 @@
 }
 
 .header img {
-    width: 180px;
-    height: 180px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     margin: 0 auto;
     border: 4px solid #fff;box-shadow: 2px 2px 16px #ddd;
+}
+
+@media (min-width: 960px) {
+    .header img {
+        width: 180px;
+        height: 180px;
+    }
 }
 
  .footer {
