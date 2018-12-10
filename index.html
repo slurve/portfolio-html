@@ -150,7 +150,7 @@
                     <div id="error-message">
                         Uh oh. We've got some errors here. Take a look.
                     </div>
-                    <form name="contact" method="post" netlify>
+                    <form name="contact" method="post" netlify-honeypot="bot-field" netlify>
                         <p>
                             <label for="name">Name</label>
                             <input type="text" name="name" placeholder="Name">
@@ -171,6 +171,7 @@
                             <label for="description">Brief description of project</label>
                             <textarea name="description" placeholder="Brief description of project"></textarea>
                         </p>
+                        <input name="bot-field" style="display: none;">
                         <input type="submit" value="Submit" class="button button--submit">
                     </form>
 
