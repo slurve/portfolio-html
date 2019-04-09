@@ -1,5 +1,5 @@
 // Set a name for the current cache
-var cacheName = 'v0011';
+var cacheName = 'v0012';
 
 // Default files to always cache
 var cacheFiles = [
