@@ -282,8 +282,8 @@ h2 {
 .projects__wrap a.zignal {
   background-image: url(zignal.jpg);
 }
-.projects__wrap a.euclid {
-  background-image: url(euclid.jpg);
+.projects__wrap a.indicative {
+  background-image: url(screen-indicative.jpg);
 }
 .projects__wrap a.uwishunu {
   background-image: url(uwishunu.jpg);
@@ -294,8 +294,8 @@ h2 {
 .projects__wrap a.onekingslane {
   background-image: url(onekingslane.jpg);
 }
-.projects__wrap a.gilt {
-  background-image: url(gilt.jpg);
+.projects__wrap a.uwm {
+  background-image: url(uwm.jpg);
 }
 .projects__wrap a.cityschool {
   background-image: url(cityschool.jpg);
@@ -337,30 +337,30 @@ h2 {
   justify-content: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 968px) {
   .projects__clients {
     grid-template-columns: repeat(6, 1fr);
   }
 }
 
 .projects__clients svg {
-  width: 100px;
+  width: 90px;
   margin: 10px 20px;
 }
 
 @media (min-width: 768px) {
   .projects__clients svg {
-    width: 150px;
+    width: 110px;
   }
 }
 
 .projects__clients .logo-ted {
-  width: 90px;
+  width: 70px;
 }
 
 @media (min-width: 768px) {
   .projects__clients .logo-ted {
-    width: 110px;
+    width: 80px;
   }
 }
 
@@ -380,7 +380,7 @@ h2 {
 
 @media (min-width: 768px) {
   .projects__clients .logo-samsung {
-    width: 110px;
+    width: 90px;
   }
 }
 
