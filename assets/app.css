@@ -191,7 +191,7 @@ h2 {
   @supports (display: grid) {
     .projects__wrap {
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 1rem;
+      grid-gap: 2rem;
       height: 800px;
     }
   }
@@ -200,7 +200,7 @@ h2 {
 @media (min-width: 960px) {
   @supports (display: grid) {
     .projects__wrap {
-      grid-gap: 2rem;
+      grid-gap: 2.5rem;
       height: 1280px;
     }
   }
@@ -219,7 +219,7 @@ h2 {
   height: 280px;
   flex: 0 1 30.333%;
   margin: 0 1% 25px;
-  box-shadow: 2px 2px 16px #ddd;
+  box-shadow: 2px 2px 12px #eee;
 }
 @supports (display: grid) {
   .projects__wrap a {
@@ -234,7 +234,7 @@ h2 {
 }
 
 .projects__wrap a:before {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.05);
   content: '';
   width: 100%;
   border-radius: 2px;
@@ -266,9 +266,9 @@ h2 {
   }
 }
 
-.projects__wrap a.comcast {
-  background-image: url(comcast.jpg);
-  background-position: center center;
+.projects__wrap a.sheshouldrun {
+  background-image: url(ssr.jpg);
+  background-position: left top;
 }
 .projects__wrap a.curalate {
   background-image: url(curalate.png);
@@ -283,7 +283,7 @@ h2 {
   background-image: url(zignal.jpg);
 }
 .projects__wrap a.indicative {
-  background-image: url(screen-indicative.jpg);
+  background-image: url(indicative.jpg);
 }
 .projects__wrap a.uwishunu {
   background-image: url(uwishunu.jpg);
